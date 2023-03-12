@@ -1,16 +1,15 @@
 import React from "react";
-import ScrollPositionContext from "./context/ScrollPosition.Context";
-import { useScroll, useMotionValueEvent } from "framer-motion";
-import { HiMagnifyingGlass } from "react-icons/hi2";
+import ScrollPositionContext from "./context/ScrollPositionContext";
+import { motion } from "framer-motion";
 import Sample from "./components/Sample";
 import Scrollbar from "smooth-scrollbar";
 import Label from "./components/Label";
+import MousePositionContext from "./context/MousePositionContext";
 const App = () => {
   const scrollEl = React.useRef(null);
   const navbarFixed = React.useRef(null);
-  const item1Fixed = React.useRef(null)
   const {  scrollingContextData , setScrollingContextData} = React.useContext(ScrollPositionContext);
-  
+  const {mousePos} = React.useContext(MousePositionContext)
 
   const options = {
     damping: 0.03,
@@ -48,6 +47,7 @@ const App = () => {
         </div>
       </div> */}
       {/* nav */}
+    
       <div
         ref={navbarFixed}
         className="h-[4.5rem] w-full sticky thin-box-divider top-0 z-[40] flex items-end justify-center "

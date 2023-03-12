@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .thin-box-divider {
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(29, 29, 29);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(29, 29, 29);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.06);
+  }
+
+  .thin-left-divider {
+    -webkit-box-shadow: inset 1px 0px 0px 0px rgba(29, 29, 29);
+    -moz-box-shadow: inset 1px 0px 0px 0px rgba(29, 29, 29);
+    box-shadow: inset 1px 0px 0px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .thin-top-divider {
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(29, 29, 29);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(29, 29, 29);
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .thin-right-divider {
+    -webkit-box-shadow: inset -1px 0px 0px 0px rgba(29, 29, 29);
+    -moz-box-shadow: inset -1px 0px 0px 0px rgba(29, 29, 29);
+    box-shadow: inset -1px 0px 0px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .thin-bottom-divider {
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(29, 29, 29);
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(29, 29, 29);
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  /* fonts */
+  @font-face {
+    font-family: "mori-light";
+    src: url(".assets/fonts/PPMoriExtralight.otf");
+  }
+  @font-face {
+    font-family: "mori-regular";
+    src: url(".assets/fonts/PPMoriRegular.otf");
+  }
+  @font-face {
+    font-family: "mori-semibold";
+    src: url(".assets/fonts/PPMoriSemiBold.otf");
+  }
+}

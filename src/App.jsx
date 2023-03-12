@@ -59,19 +59,19 @@ const App = () => {
            {/* <div className="text-[1.3rem]  cursor-pointer w-fit p-1">
               <HiMagnifyingGlass />
             </div> */}
-            <div className="flex  gap-16 capitalize  font-semibold tracking-tight font-plus text-base">
+            <div className="flex  gap-16 capitalize  font-semibold tracking-tight font-plus text-sm">
               <span className=" cursor-pointer">docs</span>
               <span className=" cursor-pointer">tools</span>
             </div>
            
           </div>
           {/* search */}
-          {/* <Label text={`scroll_position: ${pos}`}></Label> */}
         </div>
+        <Label left text={`scrolling_position:${scrollingContextData.navbarPos}`}></Label>
       </div>
       {/* content */}
-      <div className="thin-box-divider mt-12 container mx-auto px-8 h-[200vh]  relative box-border">
-        <div className=" h-[50rem] w-52 thin-box-divider pt-40">
+      <div className="thin-box-divider mt-12 container mx-auto px-8 h-auto min-h-[300vh]  relative box-border">
+        <div className=" h-[70rem] w-fit thin-box-divider pt-40">
           <Sample></Sample>
         </div>
         
